@@ -11,7 +11,17 @@ class HomeScreen extends StatelessWidget {
         title: const Text('Dicee'),
         backgroundColor: Colors.red,
         centerTitle: true,
-      )
+      ),
+          body: const Row(
+        children: [
+          Expanded(
+            child: Image(image: AssetImage('assets/images/dice1.png')),
+          ),
+          Expanded(
+            child: Image(image: AssetImage('assets/images/dice2.png')),
+          ),
+        ],
+    ),
     );
   }
 }
