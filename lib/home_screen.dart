@@ -1,3 +1,5 @@
+import 'dart:math';
+
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -26,6 +28,13 @@ class _HomeScreenState extends State<HomeScreen> {
           body: GestureDetector(
             onTap: () {
               print('Tab');
+              var random1 = 1 + Random().nextInt(5) + 1;
+              var random2 = 1 + Random().nextInt(5) + 1;
+
+              setState(() {
+                diceNumberleft = random1;
+                diceNumberright = random2;
+              });
             },
             child: Center(
               child: Row(
